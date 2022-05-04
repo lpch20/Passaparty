@@ -115,10 +115,11 @@ footer {
     margin-top: 200px;
     display: flex;
     justify-content: center;
+    text-align: center;
 
     #clasiciacion-eventos {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
 }
 
@@ -271,6 +272,7 @@ footer {
 
     
 }
+
 
 
 

@@ -56,10 +56,11 @@ footer {
   margin: auto;
   margin-top: 200px;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  text-align: center; }
   .row4 #clasiciacion-eventos {
     display: flex;
-    flex-direction: column; }
+    flex-direction: row; }
 
 .row5 {
   margin-top: 80px;
