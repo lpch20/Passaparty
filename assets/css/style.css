@@ -54,12 +54,12 @@ footer {
 
 .row4 {
   margin: auto;
-  margin-top: 200px; }
+  margin-top: 200px;
+  display: flex;
+  justify-content: center; }
   .row4 #clasiciacion-eventos {
     display: flex;
     flex-direction: column; }
-    .row4 #clasiciacion-eventos .list-clasificacion {
-      margin: auto; }
 
 .row5 {
   margin-top: 80px;

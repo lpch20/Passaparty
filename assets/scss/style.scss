@@ -113,14 +113,12 @@ footer {
 .row4 {
     margin: auto;
     margin-top: 200px;
+    display: flex;
+    justify-content: center;
 
     #clasiciacion-eventos {
         display: flex;
         flex-direction: column;
-
-        .list-clasificacion {
-            margin: auto;
-        }
     }
 }
 
