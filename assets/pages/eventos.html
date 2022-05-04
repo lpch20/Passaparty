@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link rel="shortcut icon" href="./../img/favicon-32x32.png">
+    <meta name="description" content="Accede en Passaparty, a todos los eventos disponibles al momento y adquiere tu entrada facilmente con solo dar un clic.">
+    <meta name="keywords" content="Eventos, deportes, fiestas, conciertos, cine">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../css/bootstrap.min.css">
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <header class="row1">
+            <div class="col">
+                <nav class="navbar navbar-light bg-light fixed-top">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="./../../index.html"><img src="./../img/imagen pproyecto coder.png" alt="Logo"
+                                width="60px" height="60px"></a>
+                        <h1 id="title1">PASSAPARTY</h1>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page"
+                                            href="./../../index.html">Inicio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./eventos.html">Todos
+                                            los
+                                            evento</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./crearevento.html" target="_blank">Crear evento</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./registro.html">
+                                            Registro</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./acercade.html">
+                                            Acerca
+                                            de</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Ingresar
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputEmail1" class="form-label">Email
+                                                        address</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                                        aria-describedby="emailHelp">
+                                                    <div id="emailHelp" class="form-text">We'll never share your
+                                                        email
+                                                        with
+                                                        anyone else.</div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputPassword1"
+                                                        class="form-label">Password</label>
+                                                    <input type="password" class="form-control"
+                                                        id="exampleInputPassword1">
+                                                </div>
+                                                <div class="mb-3 form-check">
+                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">Check me
+                                                        out</label>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                            </form>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <form class="d-flex">
+                                    <input class="form-control me-2" type="search" placeholder="Buscar"
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <article class="row4">
+
+            <div class="transparent">
+                <div id="clasiciacion-eventos" data-bs-toggle="tooltip" data-bs-placement="right"
+                    data-bs-original-title="Icon-only">
+                    <div class="list-clasificacion">
+                        <ul class="nav nav-pills nav-flush flex-row mb-auto mx-auto text-center">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip"
+                                    data-bs-placement="right" data-bs-original-title="Home">
+                                    <i class="bi-house fs-1"><i class="em em-soccer" aria-role="presentation"
+                                            aria-label="SOCCER BALL"></i></i>
+                                    <p>Deportes</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip"
+                                    data-bs-placement="right" data-bs-original-title="Dashboard">
+                                    <i class="bi-speedometer2 fs-1"><i class="em em-man_dancing"
+                                            aria-role="presentation" aria-label="MAN DANCING"></i></i>
+                                    <p>Fiestas</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip"
+                                    data-bs-placement="right" data-bs-original-title="Orders">
+                                    <i class="bi-table fs-1"><i class="em em-microphone" aria-role="presentation"
+                                            aria-label="MICROPHONE"></i></i>
+                                    <p>Conciertos</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip"
+                                    data-bs-placement="right" data-bs-original-title="Products">
+                                    <i class="bi-heart fs-1"><i class="em em-cinema" aria-role="presentation"
+                                            aria-label="CINEMA"></i></i>
+                                    <p>Cine</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip"
+                                    data-bs-placement="right" data-bs-original-title="Customers">
+                                    <i class="bi-people fs-1"><i class="em em-admission_tickets"
+                                            aria-role="presentation" aria-label=""></i></i>
+                                    <p>Otros</p>
+                                </a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+
+        <article class="row5">
+            <h2>Todos los eventos</h2>
+            <div class="col-card">
+                <div class="card">
+                    <img src="./../img/Header-Duki-sold-out.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">DUKI</h5>
+                        <ul>
+                            <li><b>Lugar:</b> Estadio Centenario</li>
+                            <li><b>Fecha: 23/05/22</b></li>
+                            <li><b>Precio: 100 U$D</b></li>
+                        </ul>
+                        <a href="./../pages/comprar.html" target="_blank" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./../img/maria becerra.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">MARIA BECERRA</h5>
+                        <ul>
+                            <li><b>Lugar:</b> Estadio Centenario</li>
+                            <li><b>Fecha: 23/05/22</b></li>
+                            <li><b>Precio: 100 U$D</b></li>
+                        </ul>
+                        <a href="./../pages/comprar.html" target="_blank" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./../img/asan.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ASAN</h5>
+                        <ul>
+                            <li><b>Lugar:</b> Estadio Centenario</li>
+                            <li><b>Fecha: 23/05/22</b></li>
+                            <li><b>Precio: 100 U$D</b></li>
+                        </ul>
+                        <a href="./../pages/comprar.html" target="_blank" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./../img/bad bunny.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">BAD BUNNY</h5>
+                        <ul>
+                            <li><b>Lugar:</b> Estadio Centenario</li>
+                            <li><b>Fecha: 23/05/22</b></li>
+                            <li><b>Precio: 100 U$D</b></li>
+                        </ul>
+                        <a href="./../pages/comprar.html" target="_blank" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./../img/ysy a.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">YSY A</h5>
+                        <ul>
+                            <li><b>Lugar:</b> Estadio Centenario</li>
+                            <li><b>Fecha: 23/05/22</b></li>
+                            <li><b>Precio: 100 U$D</b></li>
+                        </ul>
+                        <a href="./../pages/comprar.html" target="_blank" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./../img/quevedo.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">QUEVEDO</h5>
+                        <ul>
+                            <li><b>Lugar:</b> Estadio Centenario</li>
+                            <li><b>Fecha: 23/05/22</b></li>
+                            <li><b>Precio: 100 U$D</b></li>
+                        </ul>
+                        <a href="./../pages/comprar.html" target="_blank" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./../img/quevedo.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">QUEVEDO</h5>
+                        <ul>
+                            <li><b>Lugar:</b> Estadio Centenario</li>
+                            <li><b>Fecha: 23/05/22</b></li>
+                            <li><b>Precio: 100 U$D</b></li>
+                        </ul>
+                        <a href="./../pages/comprar.html" target="_blank" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./../img/quevedo.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">QUEVEDO</h5>
+                        <ul>
+                            <li><b>Lugar:</b> Estadio Centenario</li>
+                            <li><b>Fecha: 23/05/22</b></li>
+                            <li><b>Precio: 100 U$D</b></li>
+                        </ul>
+                        <a href="./../pages/comprar.html" target="_blank" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./../img/quevedo.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">QUEVEDO</h5>
+                        <ul>
+                            <li><b>Lugar:</b> Estadio Centenario</li>
+                            <li><b>Fecha: 23/05/22</b></li>
+                            <li><b>Precio: 100 U$D</b></li>
+                        </ul>
+                        <a href="./../pages/comprar.html" target="_blank" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <div class="paginas">
+            <nav aria-label="...">
+                <ul class="pagination">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="eventos.html" tabindex="-1" aria-disabled="true">Previous</a>
+                  </li>
+                  <li class="page-item active" aria-current="page">
+                    <a class="page-link" href="eventos.html">1</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="./eventos_2.html">2</a></li>
+                  <li class="page-item"><a class="page-link" href="./evento_3.html">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="evento_3.html">Next</a>
+                  </li>
+                </ul>
+              </nav>
+        </div>
+
+        <footer class="text-center text-lg-start border border-black mt-xl-5 pt-4">
+
+            <div class="container p-4">
+
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <h5 class="text-uppercase mb-4">OUR WORLD</h5>
+
+                        <ul class="list-unstyled mb-4">
+                            <li>
+                                <a href="#!" class="text-black">About us</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-black">Collections</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-black">Environmental philosophy</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-black">Artist collaborations</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <h5 class="text-uppercase mb-4">Assistance</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!" class="text-black">Contact us</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-black">Size Guide</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-black">Shipping Information</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-black">Returns & Exchanges</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-black">Payment</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="redes-sociales" class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <h5 class="text-uppercase mb-4">Redes sociales</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!"> <img src="./../img/facebook.png" alt=""> </a>
+                                <a href="#!"> <img src="./../img/instagram.png" alt=""> </a>
+                                <a href="#!"> <img src="./../img/whatsapp.png" alt=""> </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <h5 class="text-uppercase mb-4">Sign up to our newsletter</h5>
+
+                        <div class="form-outline form-black mb-4">
+                            <input id="email-fot" type="email" id="form5Example2" class="form-control" />
+                            <label class="form-label" for="form5Example2">Email address</label>
+                        </div>
+
+                        <button id="subscribirse" type="submit"
+                            class="btn btn-outline-black btn-block">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center p-3 border-top border-black">
+                © 2022 Copyright:
+                <a class="text-black" href="https://mdbootstrap.com/">Passaparty.com.uy</a>
+            </div>
+        </footer>
+
+        <section id="whatsapp">
+            <a href="">
+                <img src="./../img/whatsapp 2.png" alt="">
+            </a>
+        </section>
+    </div>
+
+
+    <script src="./../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

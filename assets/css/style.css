@@ -1,0 +1,258 @@
+* {
+  padding: 0px;
+  margin: 0px; }
+
+body {
+  background-image: url(./../img/diamond-zag.png); }
+
+header h1 {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  text-align: center; }
+
+.row2 {
+  margin-top: 160px; }
+  .row2 .carousel-inner {
+    margin: auto; }
+
+.row3 {
+  margin-top: 80px;
+  margin-bottom: 80px; }
+  .row3 h2 {
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif;
+    color: azure; }
+  .row3 .card {
+    margin-top: 40px;
+    margin-bottom: 20px; }
+
+.col-todoevento {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px; }
+  .col-todoevento .btn {
+    height: 60px; }
+
+footer {
+  background-color: azure; }
+  footer #redes-sociales li {
+    list-style: none; }
+    footer #redes-sociales li img {
+      width: 40px; }
+
+#whatsapp a {
+  background: none;
+  position: fixed;
+  top: 88%;
+  right: 1%; }
+
+#whatsapp img {
+  width: 65px;
+  transition: 2s; }
+
+#whatsapp img:hover {
+  width: 75px; }
+
+.row4 {
+  margin: auto;
+  margin-top: 200px; }
+  .row4 #clasiciacion-eventos {
+    display: flex;
+    flex-direction: column; }
+    .row4 #clasiciacion-eventos .list-clasificacion {
+      margin: auto; }
+
+.row5 {
+  margin-top: 80px;
+  margin-bottom: 80px; }
+  .row5 h2 {
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif;
+    color: azure; }
+  .row5 .card {
+    margin-top: 40px;
+    margin-bottom: 20px; }
+
+.paginas {
+  display: flex;
+  justify-content: center; }
+
+.row-contact, .row6 {
+  margin-top: 150px;
+  margin-bottom: 80px; }
+  .row-contact h2, .row6 h2 {
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif;
+    color: azure; }
+  .row-contact p, .row6 p {
+    color: white; }
+
+.row-register {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center; }
+  .row-register .form-group {
+    margin-bottom: 20px; }
+  .row-register h2 {
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif;
+    color: azure; }
+  .row-register p {
+    color: white; }
+
+.row6 .form-horizontal {
+  margin-top: 40px; }
+  .row6 .form-horizontal .btn {
+    margin-top: 20px; }
+
+.row6 img {
+  width: 340px; }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .row2 .carousel-inner {
+    margin: auto;
+    width: 744px; }
+    .row2 .carousel-inner h5 {
+      font-size: 40px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif;
+      color: azure; }
+    .row2 .carousel-inner p {
+      color: white; }
+    .row2 .carousel-inner #anuel h5 {
+      color: black; }
+    .row2 .carousel-inner #anuel p {
+      color: black; }
+  .row3 {
+    margin-top: 80px;
+    margin-bottom: 80px; }
+    .row3 h2 {
+      font-size: 40px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif;
+      color: azure;
+      text-align: center; }
+    .row3 .card {
+      margin: auto;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      width: 740px; }
+  .row4 li {
+    margin-right: 40px; }
+  .row5 {
+    margin-top: 80px;
+    margin-bottom: 80px; }
+    .row5 h2 {
+      font-size: 40px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif;
+      color: azure;
+      text-align: center; }
+    .row5 .card {
+      margin: auto;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      width: 740px; } }
+
+@media only screen and (min-width: 1024px) {
+  .row2 .carousel-inner {
+    margin: auto;
+    width: 1000px; }
+    .row2 .carousel-inner h5 {
+      font-size: 40px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif;
+      color: azure; }
+    .row2 .carousel-inner p {
+      color: white; }
+    .row2 .carousel-inner #anuel h5 {
+      color: black; }
+    .row2 .carousel-inner #anuel p {
+      color: black; }
+  .row3 {
+    margin-top: 120px;
+    margin-bottom: 80px;
+    padding: 60px; }
+    .row3 h2 {
+      font-size: 40px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif;
+      color: azure; }
+    .row3 .col-card {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+    .row3 .card {
+      margin: auto;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      width: 400px; }
+      .row3 .card img {
+        height: 239px; }
+  .col-todoevento {
+    display: flex;
+    justify-content: center; }
+    .col-todoevento .btn {
+      height: 60px; }
+  .row4 {
+    background-color: #07070740; }
+    .row4 li {
+      margin-right: 80px; }
+  .row5 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 60px; }
+    .row5 h2 {
+      font-size: 40px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif;
+      color: azure; }
+    .row5 .col-card {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+    .row5 .card {
+      margin: auto;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      width: 400px; }
+      .row5 .card img {
+        height: 239px; }
+  .row-contact, .row6 {
+    margin-top: 150px;
+    width: 600px; }
+    .row-contact h2, .row6 h2 {
+      font-size: 40px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif;
+      color: azure; }
+    .row-contact p, .row6 p {
+      color: white; }
+  .row-register {
+    margin: auto;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 600px; }
+    .row-register .form-group {
+      margin-bottom: 20px; }
+    .row-register h2 {
+      font-size: 40px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif;
+      color: azure; }
+    .row-register p {
+      color: white; }
+  .row6 {
+    display: flex;
+    margin: auto;
+    margin-top: 150px; }
+    .row6 .acercade {
+      margin: auto;
+      margin-right: 180px;
+      margin-left: -90px; }
+    .row6 .form-horizontal {
+      margin-top: 0px;
+      width: 400px;
+      font-size: 40px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif;
+      color: azure; }
+      .row6 .form-horizontal h2 {
+        text-align: start; }
+    .row6 img {
+      width: 340px; } }
