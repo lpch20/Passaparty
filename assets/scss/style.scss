@@ -120,6 +120,17 @@ footer {
     #clasiciacion-eventos {
         display: flex;
         flex-direction: row;
+
+        .list-clasificacion{
+            i{
+                width: 32px;
+            }
+
+            p{
+                width: 38px;
+                font-size: 11px;
+            }
+        }
     }
 }
 

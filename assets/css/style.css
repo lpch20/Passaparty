@@ -61,6 +61,11 @@ footer {
   .row4 #clasiciacion-eventos {
     display: flex;
     flex-direction: row; }
+    .row4 #clasiciacion-eventos .list-clasificacion i {
+      width: 32px; }
+    .row4 #clasiciacion-eventos .list-clasificacion p {
+      width: 38px;
+      font-size: 11px; }
 
 .row5 {
   margin-top: 80px;
