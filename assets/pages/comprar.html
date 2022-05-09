@@ -1,22 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Comprar</title>
+    <meta name="description" content="Seleccione metodo de pago y adquiera su entrada en instantes.">
+    <meta name="keywords" content="pagar, entrada, comprar, debito, credito">
     <link rel="stylesheet" href="./../css/bootstrap.min.css">
     <link rel="stylesheet" href="./../css/owl.carousel.min.css">
     <link rel="stylesheet" href="./../css/style.css">
 </head>
+
 <body>
     <div class="container-fluid">
-        <div class="row1">
+        <header class="row1">
             <div class="col">
                 <nav class="navbar navbar-light bg-light fixed-top">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="./../../index.html"><img src="./../img/imagen pproyecto coder.png" alt="Logo"
-                                width="80px" height="60px"></a>
+                        <a class="navbar-brand" href="./../../index.html"><img src="./../img/imagen pproyecto coder.png"
+                                alt="Logo" width="60px" height="60px"></a>
                         <h1 id="title1">PASSAPARTY</h1>
                         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -32,22 +36,24 @@
                             <div class="offcanvas-body">
                                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                                        <a class="nav-link active" aria-current="page"
+                                            href="./../../index.html">Inicio</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="./assets/pages/eventos.html" target="_blank">Todos los
-                                            eventos</a>
+                                        <a class="nav-link" href="./eventos.html">Todos
+                                            los
+                                            evento</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="./assets/pages/contacto.html"
-                                            target="_blank">Contacto</a>
+                                        <a class="nav-link" href="./crearevento.html" target="_blank">Crear evento</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="./assets/pages/registro.html" target="_blank">
+                                        <a class="nav-link" href="./registro.html">
                                             Registro</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="./assets/pages/acercade.html" target="_blank"> Acerca
+                                        <a class="nav-link" href="./acercade.html">
+                                            Acerca
                                             de</a>
                                     </li>
                                     <li class="nav-item dropdown">
@@ -62,7 +68,8 @@
                                                         address</label>
                                                     <input type="email" class="form-control" id="exampleInputEmail1"
                                                         aria-describedby="emailHelp">
-                                                    <div id="emailHelp" class="form-text">We'll never share your email
+                                                    <div id="emailHelp" class="form-text">We'll never share your
+                                                        email
                                                         with
                                                         anyone else.</div>
                                                 </div>
@@ -90,15 +97,221 @@
                             </div>
                         </div>
                     </div>
-
                 </nav>
-
             </div>
-        </div>
-    </div>
+        </header>
 
-    aca va todo para comprpar entradas.
+        <section style="background-color: #eee; margin-top: 120px;">
+            <div class="container py-5">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row d-flex justify-content-center pb-5">
+                            <div class="col-md-7 col-xl-5 mb-4 mb-md-0">
+                                <div class="py-4 d-flex flex-row">
+                                    <h5><span class="far fa-check-square pe-2"></span><b>PAGAR</b> </h5>
+                                </div>
+                                <h4 class="text-success">$100.00</h4>
+                                <h4>Duki | Estadio Centenario.</h4>
+                                <div class="d-flex pt-2">
+                                    <div class="ms-auto">
+                                        <p class="text-primary">
+                                            <i class="fas fa-plus-circle text-primary pe-1"></i>Elegie tipo de entrada disponible
+                                        </p>
+                                    </div>
+                                </div>
+                                <p>
+                                  Seleccione a continuacion la entrada disponible para el evento. 
+                                </p>
+                                <div class="rounded d-flex" style="background-color: #f8f9fa;">
+                                    <div class="p-2">Campo vip</div>
+                                   <div class="ms-auto p-2"><input type="checkbox">OAP</div>
+                                </div>
+                                <div class="rounded d-flex" style="background-color: #f8f9fa;">
+                                    <div class="p-2">Olimpica 1</div>
+                                    <div class="ms-auto p-2"><input type="checkbox">OAP</div>
+                                </div>
+                                <div class="rounded d-flex" style="background-color: #f8f9fa;">
+                                    <div class="p-2">Olimpica 2</div>
+                                    <div class="ms-auto p-2"><input type="checkbox">OAP</div>
+                                </div>
+                                <hr />
+                                <div class="pt-2">
+                                    <div class="d-flex pb-2">
+                                        <div class="ms-auto">
+                                            <p class="text-primary">
+                                                <i class="fas fa-plus-circle text-primary pe-1"></i>Metodo de pago
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p>
+                                       Seleccione a continuacion el metodo de pago disponible.
+                                    </p>
+                                    <form class="pb-3">
+                                        <div class="d-flex flex-row pb-3">
+                                            <div class="d-flex align-items-center pe-2">
+                                                <input class="form-check-input" type="radio"
+                                                    name="radioNoLabel" id="radioNoLabel1" value=""
+                                                    aria-label="..." checked />
+                                            </div>
+                                            <div class="rounded border d-flex w-100 p-3 align-items-center">
+                                                <p class="mb-0">
+                                                    <i
+                                                        class="fab fa-cc-visa fa-lg text-primary pe-2"></i>Visa
+                                                </p>
+                                                <div class="ms-auto">Debito | Credito</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-row">
+                                            <div class="d-flex align-items-center pe-2">
+                                                <input class="form-check-input" type="radio"
+                                                    name="radioNoLabel" id="radioNoLabel2" value=""
+                                                    aria-label="..." />
+                                            </div>
+                                            <div class="rounded border d-flex w-100 p-3 align-items-center">
+                                                <p class="mb-0">
+                                                    <i
+                                                        class="fab fa-cc-mastercard fa-lg text-dark pe-2"></i>Mastercard
+                                                    Office
+                                                </p>
+                                                <div class="ms-auto">Debito | Credito</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-row">
+                                            <div class="d-flex align-items-center pe-2">
+                                                <input class="form-check-input" type="radio"
+                                                    name="radioNoLabel" id="radioNoLabel2" value=""
+                                                    aria-label="..." />
+                                            </div>
+                                            <div class="rounded border d-flex w-100 p-3 align-items-center">
+                                                <p class="mb-0">
+                                                    <i
+                                                        class="fab fa-cc-mastercard fa-lg text-dark pe-2"></i>Redes de cobranzas
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <input type="button" value="Proceder a pagar"
+                                        class="btn btn-primary btn-block btn-lg" />
+                                </div>
+                            </div>
+
+                            <div class="col-md-5 col-xl-4 offset-xl-1">
+                                <div class="py-4 d-flex justify-content-end">
+                                    <h6><a href="./eventos.html">Cancelar compra, regresa a eventos</a></h6>
+                                </div>
+                                <div class="rounded d-flex flex-column p-2"
+                                    style="background-color: #f8f9fa;">
+                                    <div class="p-2 me-3">
+                                        <h4>Resumen de compra</h4>
+                                    </div>
+                                    <div class="p-2 d-flex">
+                                        <div class="col-8">Precio de entrada</div>
+                                        <div class="ms-auto">$100.00</div>
+                                    </div>
+                                    <div class="p-2 d-flex">
+                                        <div class="col-8">Utilizacion de servicios (Passaparty)</div>
+                                        <div class="ms-auto"> $5.00
+                                        </div>
+                                    </div>
+                                    <div class="p-2 d-flex">
+                                        <div class="col-8">
+                                            IVA <span
+                                                class="fa fa-question-circle text-dark"></span>
+                                        </div>
+                                        <div class="ms-auto"><b>$0.84</b></div>
+                                    </div>
+                                    <div class="border-top px-2 mx-2"></div>
+                                    <div class="p-2 d-flex pt-3">
+                                        <div class="col-8"><b>Total</b></div>
+                                        <div class="ms-auto"><b class="text-success">$106.00</b></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center text-lg-start border border-black mt-xl-5 pt-4">
+
+            <div class="container p-4">
+
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <h5 class="text-uppercase mb-4">TODOS LOS EVENTOS</h5>
+
+                        <ul class="list-unstyled mb-4">
+                            <li>
+                                <a href="#!" class="text-black">Acerca de</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-black">Collections</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-black">Environmental philosophy</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-black">Artist collaborations</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <h5 class="text-uppercase mb-4">Assistance</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!" class="text-black">Contact us</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-black">Size Guide</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-black">Shipping Information</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-black">Returns & Exchanges</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-black">Payment</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="redes-sociales" class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <h5 class="text-uppercase mb-4">Redes sociales</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!"> <img src="./../img/facebook.png" alt=""> </a>
+                                <a href="#!"> <img src="./../img/instagram.png" alt=""> </a>
+                                <a href="#!"> <img src="./../img/whatsapp.png" alt=""> </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <h5 class="text-uppercase mb-4">Suscribete para saber mas</h5>
+
+                        <div class="form-outline form-black mb-4">
+                            <input id="email-fot" type="email" id="form5Example2" class="form-control" />
+                            <label class="form-label" for="form5Example2">Email</label>
+                        </div>
+
+                        <button id="subscribirse" type="submit"
+                            class="btn btn-outline-black btn-block">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center p-3 border-top border-black">
+                © 2022 Copyright:
+                <a class="text-black" href="./../../index.html">Passaparty.com.uy</a>
+            </div>
+        </footer>
+
+    </div>
 
     <script src="./../js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

@@ -60,6 +60,10 @@ header {
         @include subtitulos;
     }
 
+    li{
+        list-style: none;
+    }
+
     .card {
         margin-top: 40px;
         margin-bottom: 20px;
@@ -112,7 +116,7 @@ footer {
 
 .row4 {
     margin: auto;
-    margin-top: 200px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -121,12 +125,12 @@ footer {
         display: flex;
         flex-direction: row;
 
-        .list-clasificacion{
-            i{
+        .list-clasificacion {
+            i {
                 width: 42px;
             }
 
-            p{
+            p {
                 width: 38px;
                 font-size: 11px;
             }
@@ -134,12 +138,17 @@ footer {
     }
 }
 
+#name-eventos{
+    margin-top: 200px;
+    @include subtitulos;
+}
+
 .row5 {
-    margin-top: 80px;
+    margin-top: 50px;
     margin-bottom: 80px;
 
-    h2 {
-        @include subtitulos;
+    li{
+        list-style: none;
     }
 
     .card {
@@ -193,16 +202,24 @@ footer {
 .row6 {
     @extend .row-contact;
 
-    .form-horizontal{
+    .form-horizontal {
         margin-top: 40px;
 
-        .btn{
+        .btn {
             margin-top: 20px;
         }
     }
+
     img {
         width: 340px;
     }
+}
+
+// PIE DE PAGINA
+
+#subscribirse{
+    border-style: solid;
+    border-color: black;
 }
 
 
@@ -281,7 +298,15 @@ footer {
 
     // PAGINA ACERCA DE
 
-    
+    // PAGINA COMPRAR
+
+    .row8{
+        .card-body{
+            margin-top: 200px;
+        }
+     
+    }
+
 }
 
 
@@ -429,22 +454,25 @@ footer {
         margin: auto;
         margin-top: 150px;
 
-       .acercade{
-           margin: auto;
-           margin-right: 180px;
-           margin-left: -90px;
-       }
-        .form-horizontal{
+        .acercade {
+            margin: auto;
+            margin-right: 180px;
+            margin-left: -90px;
+        }
+
+        .form-horizontal {
             margin-top: 0px;
             width: 400px;
             @include subtitulos;
-            h2{
+
+            h2 {
                 text-align: start;
             }
         }
+
         img {
             width: 340px;
         }
     }
-    
+
 }
