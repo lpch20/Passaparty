@@ -103,64 +103,41 @@
             </div>
         </header>
 
-        <nav id="name-eventos">
-            <h2>Todos los eventos</h2>
-        </nav>
-        
-        <article class="row4">
-
-            <div class="transparent">
-                <div id="clasiciacion-eventos" data-bs-toggle="tooltip" data-bs-placement="right"
-                    data-bs-original-title="Icon-only">
-                    <div class="list-clasificacion">
-                        <ul class="nav nav-pills nav-flush flex-row mb-auto mx-auto text-center">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip"
-                                    data-bs-placement="right" data-bs-original-title="Home">
-                                    <i class="bi-house fs-1"><i class="em em-soccer" aria-role="presentation"
-                                            aria-label="SOCCER BALL"></i></i>
-                                    <p>Deportes</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip"
-                                    data-bs-placement="right" data-bs-original-title="Dashboard">
-                                    <i class="bi-speedometer2 fs-1"><i class="em em-man_dancing"
-                                            aria-role="presentation" aria-label="MAN DANCING"></i></i>
-                                    <p>Fiestas</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip"
-                                    data-bs-placement="right" data-bs-original-title="Orders">
-                                    <i class="bi-table fs-1"><i class="em em-microphone" aria-role="presentation"
-                                            aria-label="MICROPHONE"></i></i>
-                                    <p>Conciertos</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip"
-                                    data-bs-placement="right" data-bs-original-title="Products">
-                                    <i class="bi-heart fs-1"><i class="em em-cinema" aria-role="presentation"
-                                            aria-label="CINEMA"></i></i>
-                                    <p>Cine</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip"
-                                    data-bs-placement="right" data-bs-original-title="Customers">
-                                    <i class="bi-people fs-1"><i class="em em-admission_tickets"
-                                            aria-role="presentation" aria-label=""></i></i>
-                                    <p>Otros</p>
-                                </a>
-
-                            </li>
+        <nav id="filtroeventos" class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand" href="#">
+                        <h2>Seleccione evento</h2>
+                    </a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+                    <div class="dropdown">
+                        <button id="botonFiltro" type="button" class="btn btn-primary dropdown-toggle"
+                            data-bs-toggle="dropdown">
+                            Filtrar eventos
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Deportes</a></li>
+                            <li><a class="dropdown-item" href="#">Fiestas</a></li>
+                            <li><a class="dropdown-item" href="#">Conciertos</a></li>
+                            <li><a class="dropdown-item" href="#">Cine</a></li>
+                            <li><a class="dropdown-item" href="#">Otros</a></li>
                         </ul>
                     </div>
+                    <form class="d-flex input-group w-auto">
+                        <input type="search" class="form-control" placeholder="Buscar" aria-label="Search" />
+                        <button class="btn btn-outline-primary" type="button" data-mdb-ripple-color="dark">
+                            Buscar
+                        </button>
+                    </form>
+
                 </div>
             </div>
-
-        </article>
+        </nav>
 
         <article class="row5">
             <div class="col-card">

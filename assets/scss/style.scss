@@ -42,12 +42,19 @@ header {
     h1 {
         @include titulos;
     }
+
+    #desplegable {
+        a {
+            color: rgb(241, 249, 240);
+        }
+    }
 }
 
 .row2 {
     margin-top: 160px;
 
-    .carousel-inner {
+
+    #presentacion {
         margin: auto;
     }
 }
@@ -56,17 +63,43 @@ header {
     margin-top: 80px;
     margin-bottom: 80px;
 
+    .title-destacados {
+        display: flex;
+        height: 80px;
+        background-color: rgba(24, 24, 24, 0.829);
+
+        h2 {
+            margin: auto;
+        }
+    }
+
     h2 {
         @include subtitulos;
     }
 
-    li{
+    li {
         list-style: none;
     }
 
     .card {
+        background-color: rgba(24, 24, 24, 0.829);
+        margin: auto;
         margin-top: 40px;
         margin-bottom: 20px;
+
+        .card-body {
+            h5 {
+                color: rgb(241, 249, 240);
+            }
+
+            li {
+                color: rgb(241, 249, 240);
+            }
+        }
+
+        img {
+            padding: 15px 15px 15px 15px;
+        }
     }
 }
 
@@ -114,46 +147,45 @@ footer {
 
 //PAGINA DE EVENTOS
 
-.row4 {
-    margin: auto;
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
 
-    #clasiciacion-eventos {
-        display: flex;
-        flex-direction: row;
-
-        .list-clasificacion {
-            i {
-                width: 42px;
-            }
-
-            p {
-                width: 38px;
-                font-size: 11px;
-            }
-        }
-    }
+#filtroeventos {
+    display: none;
 }
 
-#name-eventos{
-    margin-top: 200px;
-    @include subtitulos;
+.carousel{
+    display: none;
 }
+
+
 
 .row5 {
     margin-top: 50px;
     margin-bottom: 80px;
 
-    li{
+    li {
         list-style: none;
     }
 
+
     .card {
+        background-color: rgba(24, 24, 24, 0.829);
+        margin: auto;
         margin-top: 40px;
         margin-bottom: 20px;
+
+        .card-body {
+            h5 {
+                color: rgb(241, 249, 240);
+            }
+
+            li {
+                color: rgb(241, 249, 240);
+            }
+        }
+
+        img {
+            padding: 15px 15px 15px 15px;
+        }
     }
 }
 
@@ -217,10 +249,11 @@ footer {
 
 // PIE DE PAGINA
 
-#subscribirse{
+#subscribirse {
     border-style: solid;
     border-color: black;
 }
+
 
 
 
@@ -231,18 +264,29 @@ footer {
     .row2 {
         .carousel-inner {
             margin: auto;
-            width: 744px;
+            height: 500px;
+            padding-left: 40px;
+            padding-right: 40px;
 
-            h5 {
-                @include subtitulos;
+            img {
+                height: 500px;
             }
 
-            p {
-                color: white;
+            #description {
+
+                h5 {
+                    @include subtitulos;
+                }
+
+                p {
+                    color: white;
+                }
             }
 
             #anuel {
+
                 h5 {
+                    @include subtitulos;
                     color: black;
                 }
 
@@ -300,11 +344,11 @@ footer {
 
     // PAGINA COMPRAR
 
-    .row8{
-        .card-body{
+    .row8 {
+        .card-body {
             margin-top: 200px;
         }
-     
+
     }
 
 }
@@ -317,20 +361,33 @@ footer {
     // PAGINA DE INICIO
 
     .row2 {
-        .carousel-inner {
-            margin: auto;
-            width: 1000px;
 
-            h5 {
-                @include subtitulos;
+        #presentacion {
+            margin: auto;
+            height: 500px;
+            padding-left: 40px;
+            padding-right: 40px;
+            background: none;
+
+            img {
+                height: 500px;
             }
 
-            p {
-                color: white;
+            #description {
+
+                h5 {
+                    @include subtitulos;
+                }
+
+                p {
+                    color: white;
+                }
             }
 
             #anuel {
+
                 h5 {
+                    @include subtitulos;
                     color: black;
                 }
 
@@ -377,16 +434,167 @@ footer {
 
     //PAGINA DE EVENTOS
 
-    .row4 {
-        background-color: #07070740;
+    #filtroeventos {
+        display: flex;
+    }
 
-        li {
-            margin-right: 80px;
+    .carousel {
+        $scrollbarHeight: 4px;
+        $scrollbarColor : #D82B6A;
+        $carouselHeight : 295px;
+        $carouselWidth : 200px;
+        $fadeWidth : 50px;
+        $padding : 8px;
+        $radius : 8px;
+
+
+        display: block;
+        border-radius: $radius;
+        padding: $padding;
+        box-shadow: 0 4px 10px rgba(black, .15);
+        transform: translateZ(0);
+        margin: auto;
+        margin-top: 40px;
+        -webkit-overflow-scrolling: touch;
+        background-color: rgba(24, 24, 24, 0.829);
+
+        .touch & {
+            overflow: auto;
+        }
+
+        /* for tablets */
+
+        &[data-at*='left']>.wrap {
+            &::before {
+                opacity: 1;
+                text-indent: -50px;
+            }
+        }
+
+        &[data-at*='right']>.wrap {
+            &::after {
+                opacity: 1;
+                text-indent: -50px;
+            }
+        }
+
+        // scrollbar
+        &::after {
+            content: '';
+            pointer-events: none;
+            position: absolute;
+            z-index: 4;
+            bottom: -4px;
+            left: 0;
+            background: $scrollbarColor;
+            height: $scrollbarHeight;
+            border-radius: $scrollbarHeight;
+            opacity: 0;
+            width: var(--scrollWidth, 0);
+            left: var(--scrollLleft, 0);
+            transition: opacity .2s, bottom .2s;
+        }
+
+        &:hover {
+            &::after {
+                opacity: 1;
+                bottom: -10px;
+            }
+        }
+
+        >.wrap {
+            overflow: hidden;
+            border-radius: $radius - $padding/2;
+
+            &::before,
+            &::after {
+                content: '\2039';
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                z-index: 2;
+                width: $fadeWidth;
+                font-size: 80px;
+                text-indent: -30px;
+                line-height: $carouselHeight;
+                font-family: monospace;
+                color: #555;
+                font-weight: bold;
+                border-radius: $radius;
+                pointer-events: none;
+                transition: .2s ease-out;
+                background: linear-gradient(to right, white 20%, transparent);
+            }
+
+            &::after {
+                transform: rotate(180deg);
+                left: auto;
+                right: 0;
+            }
+
+            h4 {
+                text-align: center;
+                color: aliceblue;
+                font-size: 40px;
+            }
+
+            >ul {
+                list-style: none;
+                white-space: nowrap;
+                height: $carouselHeight;
+
+                >li {
+                    display: inline-block;
+                    vertical-align: middle;
+                    height: 100%;
+                    margin: 0 0 0 5px;
+                    position: relative;
+                    overflow: hidden;
+                    transition: 0.25s ease-out;
+
+                    &:first-child {
+                        margin: 0;
+                    }
+
+                    >img {
+                        display: block;
+                        height: 280px;
+                        margin: auto;
+                        position: relative;
+                        z-index: 1;
+                        transition: 1s ease;
+                    }
+
+                    &:hover img{ transform:scale(1.1); }
+                }
+            }
+        }
+    }
+
+    #filtroeventos {
+        margin-top: 150px;
+
+        ul {
+            li {
+                i {
+                    width: 15px
+                }
+            }
+        }
+
+        h2 {
+            @include subtitulos;
+        }
+
+        #botonFiltro {
+            margin-right: 20px;
         }
     }
 
     .row5 {
-        margin-top: 80px;
+        margin-top: 20px;
         margin-bottom: 80px;
         padding: 60px;
 

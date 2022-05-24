@@ -21,23 +21,23 @@
 
         <header class="row1">
             <div class="col">
-                <nav class="navbar navbar-light bg-light fixed-top">
+                <nav class="navbar navbar-light bg-dark fixed-top" style="color: rgb(241, 249, 240);">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="./../../index.html"><img src="./../img/imagen pproyecto coder.png"
                                 alt="Logo" width="60px" height="60px"></a>
                         <h1 id="title1">PASSAPARTY</h1>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar"
                             aria-labelledby="offcanvasNavbarLabel">
                             <div class="offcanvas-header">
                                 <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
                                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                                     aria-label="Close"></button>
                             </div>
-                            <div class="offcanvas-body">
+                            <div id="desplegable" class="offcanvas-body bg-dark">
                                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                     <li class="nav-item">
                                         <a class="nav-link active" aria-current="page"
@@ -105,64 +105,59 @@
             </div>
         </header>
 
-        <nav id="name-eventos">
-            <h2>Todos los eventos</h2>
-        </nav>
-
-        <article class="row4">
-
-            <div class="transparent">
-                <div id="clasiciacion-eventos" data-bs-toggle="tooltip" data-bs-placement="right"
-                    data-bs-original-title="Icon-only">
-                    <div class="list-clasificacion">
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip"
-                                    data-bs-placement="right" data-bs-original-title="Home">
-                                    <i class="bi-house fs-1"><i class="em em-soccer" aria-role="presentation"
-                                            aria-label="SOCCER BALL"></i></i>
-                                    <p>Deportes</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip"
-                                    data-bs-placement="right" data-bs-original-title="Dashboard">
-                                    <i class="bi-speedometer2 fs-1"><i class="em em-man_dancing"
-                                            aria-role="presentation" aria-label="MAN DANCING"></i></i>
-                                    <p>Fiestas</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip"
-                                    data-bs-placement="right" data-bs-original-title="Orders">
-                                    <i class="bi-table fs-1"><i class="em em-microphone" aria-role="presentation"
-                                            aria-label="MICROPHONE"></i></i>
-                                    <p>Conciertos</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip"
-                                    data-bs-placement="right" data-bs-original-title="Products">
-                                    <i class="bi-heart fs-1"><i class="em em-cinema" aria-role="presentation"
-                                            aria-label="CINEMA"></i></i>
-                                    <p>Cine</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip"
-                                    data-bs-placement="right" data-bs-original-title="Customers">
-                                    <i class="bi-people fs-1"><i class="em em-admission_tickets"
-                                            aria-role="presentation" aria-label=""></i></i>
-                                    <p>Otros</p>
-                                </a>
-
-                            </li>
+        <nav id="filtroeventos" class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand" href="#">
+                        <h2>Seleccione evento</h2>
+                    </a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+                    <div class="dropdown">
+                        <button id="botonFiltro" type="button" class="btn btn-primary dropdown-toggle"
+                            data-bs-toggle="dropdown">
+                            Filtrar eventos
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Deportes</a></li>
+                            <li><a class="dropdown-item" href="#">Fiestas</a></li>
+                            <li><a class="dropdown-item" href="#">Conciertos</a></li>
+                            <li><a class="dropdown-item" href="#">Cine</a></li>
+                            <li><a class="dropdown-item" href="#">Otros</a></li>
                         </ul>
                     </div>
+                    <form class="d-flex input-group w-auto">
+                        <input type="search" class="form-control" placeholder="Buscar" aria-label="Search" />
+                        <button class="btn btn-outline-primary" type="button" data-mdb-ripple-color="dark">
+                            Buscar
+                        </button>
+                    </form>
+
                 </div>
             </div>
+        </nav>
 
-        </article>
+        <div class="carousel">
+            <div class="wrap">
+                <h4>Proximamente</h4>
+                <ul>
+                    <li> <img src="./../img/cocofest.jpeg" />
+                    </li>
+                    <li> <img src="./../img/emilia.jpg" />
+                    </li>
+                    <li> <img src="./../img/khea.jpg" />
+                    </li>
+                    <li> <img src="./../img/agarrate catalina.png" />
+                    </li>
+                    <li> <img src="./../img/maria becerra.jpg" />
+                    </li>
+                </ul>
+            </div>
+        </div>
 
         <article class="row5">
 
@@ -172,9 +167,12 @@
                     <div class="card-body">
                         <h5 class="card-title">DUKI</h5>
                         <ul>
-                            <li><i class="em em-cityscape" aria-role="presentation" aria-label=""></i> <b>Lugar:</b> Estadio Centenario</li>
-                            <li><i class="em em-date" aria-role="presentation" aria-label="CALENDAR"></i> <b>Fecha: 23/05/22</b></li>
-                            <li><i class="em em-money_with_wings" aria-role="presentation" aria-label="MONEY WITH WINGS"></i> <b>Precio: 100 U$D</b></li>
+                            <li><i class="em em-cityscape" aria-role="presentation" aria-label=""></i> <b>Lugar:</b>
+                                Estadio Centenario</li>
+                            <li><i class="em em-date" aria-role="presentation" aria-label="CALENDAR"></i> <b>Fecha:
+                                    23/05/22</b></li>
+                            <li><i class="em em-money_with_wings" aria-role="presentation"
+                                    aria-label="MONEY WITH WINGS"></i> <b>Precio: 100 U$D</b></li>
                         </ul>
                         <a href="./../pages/comprar.html" target="_blank" class="btn btn-primary">Comprar</a>
                     </div>
@@ -184,9 +182,12 @@
                     <div class="card-body">
                         <h5 class="card-title">BAD BUNNY</h5>
                         <ul>
-                            <li><i class="em em-cityscape" aria-role="presentation" aria-label=""></i> <b>Lugar:</b> Estadio Centenario</li>
-                            <li><i class="em em-date" aria-role="presentation" aria-label="CALENDAR"></i> <b>Fecha: 23/05/22</b></li>
-                            <li><i class="em em-money_with_wings" aria-role="presentation" aria-label="MONEY WITH WINGS"></i> <b>Precio: 100 U$D</b></li>
+                            <li><i class="em em-cityscape" aria-role="presentation" aria-label=""></i> <b>Lugar:</b>
+                                Estadio Centenario</li>
+                            <li><i class="em em-date" aria-role="presentation" aria-label="CALENDAR"></i> <b>Fecha:
+                                    23/05/22</b></li>
+                            <li><i class="em em-money_with_wings" aria-role="presentation"
+                                    aria-label="MONEY WITH WINGS"></i> <b>Precio: 100 U$D</b></li>
                         </ul>
                         <a href="./../pages/comprar.html" target="_blank" class="btn btn-primary">Comprar</a>
                     </div>
@@ -196,9 +197,12 @@
                     <div class="card-body">
                         <h5 class="card-title">YSY A</h5>
                         <ul>
-                            <li><i class="em em-cityscape" aria-role="presentation" aria-label=""></i> <b>Lugar:</b> Estadio Centenario</li>
-                            <li><i class="em em-date" aria-role="presentation" aria-label="CALENDAR"></i> <b>Fecha: 23/05/22</b></li>
-                            <li><i class="em em-money_with_wings" aria-role="presentation" aria-label="MONEY WITH WINGS"></i> <b>Precio: 100 U$D</b></li>
+                            <li><i class="em em-cityscape" aria-role="presentation" aria-label=""></i> <b>Lugar:</b>
+                                Estadio Centenario</li>
+                            <li><i class="em em-date" aria-role="presentation" aria-label="CALENDAR"></i> <b>Fecha:
+                                    23/05/22</b></li>
+                            <li><i class="em em-money_with_wings" aria-role="presentation"
+                                    aria-label="MONEY WITH WINGS"></i> <b>Precio: 100 U$D</b></li>
                         </ul>
                         <a href="./../pages/comprar.html" target="_blank" class="btn btn-primary">Comprar</a>
                     </div>
@@ -208,9 +212,12 @@
                     <div class="card-body">
                         <h5 class="card-title">QUEVEDO</h5>
                         <ul>
-                            <li><i class="em em-cityscape" aria-role="presentation" aria-label=""></i> <b>Lugar:</b> Estadio Centenario</li>
-                            <li><i class="em em-date" aria-role="presentation" aria-label="CALENDAR"></i> <b>Fecha: 23/05/22</b></li>
-                            <li><i class="em em-money_with_wings" aria-role="presentation" aria-label="MONEY WITH WINGS"></i> <b>Precio: 100 U$D</b></li>
+                            <li><i class="em em-cityscape" aria-role="presentation" aria-label=""></i> <b>Lugar:</b>
+                                Estadio Centenario</li>
+                            <li><i class="em em-date" aria-role="presentation" aria-label="CALENDAR"></i> <b>Fecha:
+                                    23/05/22</b></li>
+                            <li><i class="em em-money_with_wings" aria-role="presentation"
+                                    aria-label="MONEY WITH WINGS"></i> <b>Precio: 100 U$D</b></li>
                         </ul>
                         <a href="./../pages/comprar.html" target="_blank" class="btn btn-primary">Comprar</a>
                     </div>
@@ -220,9 +227,12 @@
                     <div class="card-body">
                         <h5 class="card-title">QUEVEDO</h5>
                         <ul>
-                            <li><i class="em em-cityscape" aria-role="presentation" aria-label=""></i> <b>Lugar:</b> Estadio Centenario</li>
-                            <li><i class="em em-date" aria-role="presentation" aria-label="CALENDAR"></i> <b>Fecha: 23/05/22</b></li>
-                            <li><i class="em em-money_with_wings" aria-role="presentation" aria-label="MONEY WITH WINGS"></i> <b>Precio: 100 U$D</b></li>
+                            <li><i class="em em-cityscape" aria-role="presentation" aria-label=""></i> <b>Lugar:</b>
+                                Estadio Centenario</li>
+                            <li><i class="em em-date" aria-role="presentation" aria-label="CALENDAR"></i> <b>Fecha:
+                                    23/05/22</b></li>
+                            <li><i class="em em-money_with_wings" aria-role="presentation"
+                                    aria-label="MONEY WITH WINGS"></i> <b>Precio: 100 U$D</b></li>
                         </ul>
                         <a href="./../pages/comprar.html" target="_blank" class="btn btn-primary">Comprar</a>
                     </div>
@@ -232,9 +242,12 @@
                     <div class="card-body">
                         <h5 class="card-title">QUEVEDO</h5>
                         <ul>
-                            <li><i class="em em-cityscape" aria-role="presentation" aria-label=""></i> <b>Lugar:</b> Estadio Centenario</li>
-                            <li><i class="em em-date" aria-role="presentation" aria-label="CALENDAR"></i> <b>Fecha: 23/05/22</b></li>
-                            <li><i class="em em-money_with_wings" aria-role="presentation" aria-label="MONEY WITH WINGS"></i> <b>Precio: 100 U$D</b></li>
+                            <li><i class="em em-cityscape" aria-role="presentation" aria-label=""></i> <b>Lugar:</b>
+                                Estadio Centenario</li>
+                            <li><i class="em em-date" aria-role="presentation" aria-label="CALENDAR"></i> <b>Fecha:
+                                    23/05/22</b></li>
+                            <li><i class="em em-money_with_wings" aria-role="presentation"
+                                    aria-label="MONEY WITH WINGS"></i> <b>Precio: 100 U$D</b></li>
                         </ul>
                         <a href="./../pages/comprar.html" target="_blank" class="btn btn-primary">Comprar</a>
                     </div>
@@ -343,6 +356,7 @@
 
 
     <script src="./../js/bootstrap.bundle.min.js"></script>
+    <script src="./../js/carrusel.js"></script>
 </body>
 
 </html>
