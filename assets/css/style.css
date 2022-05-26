@@ -36,7 +36,7 @@ header #loginpag {
     .row3 .title-destacados h2 {
       margin: auto; }
   .row3 h2 {
-    font-size: 40px;
+    font-size: 30px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif;
     color: azure; }
   .row3 li {
@@ -97,7 +97,7 @@ footer {
     background-color: rgba(24, 24, 24, 0.829);
     padding: 10px; }
     .row8 .selectevent h2 {
-      font-size: 40px;
+      font-size: 30px;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif;
       color: azure;
       text-align: center; }
@@ -139,7 +139,7 @@ footer {
   margin-top: 150px;
   margin-bottom: 80px; }
   .row-contact h2, .row6 h2 {
-    font-size: 40px;
+    font-size: 30px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif;
     color: azure; }
   .row-contact p, .row6 p {
@@ -160,7 +160,7 @@ footer {
   .row-register .form-group {
     margin-bottom: 20px; }
   .row-register h2 {
-    font-size: 40px;
+    font-size: 30px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif;
     color: azure; }
   .row-register p {
@@ -417,13 +417,13 @@ input.submitbutton.ripplelink {
     .row2 .carousel-inner img {
       height: 500px; }
     .row2 .carousel-inner #description h5 {
-      font-size: 40px;
+      font-size: 30px;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif;
       color: azure; }
     .row2 .carousel-inner #description p {
       color: white; }
     .row2 .carousel-inner #anuel h5 {
-      font-size: 40px;
+      font-size: 30px;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif;
       color: azure;
       color: black; }
@@ -433,7 +433,7 @@ input.submitbutton.ripplelink {
     margin-top: 80px;
     margin-bottom: 80px; }
     .row3 h2 {
-      font-size: 40px;
+      font-size: 30px;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif;
       color: azure;
       text-align: center; }
@@ -448,7 +448,7 @@ input.submitbutton.ripplelink {
     margin-top: 80px;
     margin-bottom: 80px; }
     .row5 h2 {
-      font-size: 40px;
+      font-size: 30px;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif;
       color: azure;
       text-align: center; }
@@ -461,7 +461,7 @@ input.submitbutton.ripplelink {
     margin-top: 150px;
     margin-bottom: 80px; }
     .row-contact h2, .row6 h2 {
-      font-size: 40px;
+      font-size: 30px;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif;
       color: azure; }
     .row-contact p, .row6 p {
@@ -488,13 +488,13 @@ input.submitbutton.ripplelink {
     .row2 #presentacion img {
       height: 500px; }
     .row2 #presentacion #description h5 {
-      font-size: 40px;
+      font-size: 30px;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif;
       color: azure; }
     .row2 #presentacion #description p {
       color: white; }
     .row2 #presentacion #anuel h5 {
-      font-size: 40px;
+      font-size: 30px;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif;
       color: azure;
       color: black; }
@@ -505,7 +505,7 @@ input.submitbutton.ripplelink {
     margin-bottom: 80px;
     padding: 60px; }
     .row3 h2 {
-      font-size: 40px;
+      font-size: 30px;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif;
       color: azure; }
     .row3 .col-card {
@@ -620,7 +620,7 @@ input.submitbutton.ripplelink {
     #filtroeventos ul li i {
       width: 15px; }
     #filtroeventos h2 {
-      font-size: 40px;
+      font-size: 30px;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif;
       color: azure; }
     #filtroeventos #botonFiltro {
@@ -630,7 +630,7 @@ input.submitbutton.ripplelink {
     margin-bottom: 80px;
     padding: 60px; }
     .row5 h2 {
-      font-size: 40px;
+      font-size: 30px;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif;
       color: azure; }
     .row5 .col-card {
@@ -658,7 +658,7 @@ input.submitbutton.ripplelink {
       padding: 20px;
       background-color: #3e3e3e; }
     .row-contact h2, .row6 h2 {
-      font-size: 40px;
+      font-size: 30px;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif;
       color: azure; }
     .row-contact p, .row6 p {
@@ -674,7 +674,7 @@ input.submitbutton.ripplelink {
     .row-register .form-group {
       margin-bottom: 20px; }
     .row-register h2 {
-      font-size: 40px;
+      font-size: 30px;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif;
       color: azure; }
     .row-register p {
@@ -694,7 +694,7 @@ input.submitbutton.ripplelink {
     .row7 .form-horizontal {
       margin-top: 0px;
       width: 400px;
-      font-size: 40px;
+      font-size: 30px;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif;
       color: azure; }
       .row7 .form-horizontal h2 {
