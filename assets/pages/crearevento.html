@@ -7,266 +7,311 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Passaparty</title>
     <link rel="shortcut icon" href="./../img/favicon-32x32.png">
-    <meta name="description" content="Publica tu evento en Passaparty. Obtiene la oportunidad de crear el evento que tanto esperabas realizar, de una manera facil y rapida.">
+    <meta name="description"
+        content="Publica tu evento en Passaparty. Obtiene la oportunidad de crear el evento que tanto esperabas realizar, de una manera facil y rapida.">
     <meta name="keywords" content="Crear, evento, fromulario, publicar evento">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+    <link href='//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet' />
     <link rel="stylesheet" href="./../css/bootstrap.min.css">
     <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
     <link rel="stylesheet" href="./../css/style.css">
 </head>
 
 <body>
-    <div class="container-fluid">
-        <header class="row1">
-            <div class="col">
-                <nav class="navbar navbar-light bg-light fixed-top">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="./../../index.html"><img src="./../img/imagen pproyecto coder.png" alt="Logo"
-                                width="60px" height="60px"></a>
-                        <h1 id="title1">PASSAPARTY</h1>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                            aria-labelledby="offcanvasNavbarLabel">
-                            <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page"
-                                            href="./../../index.html">Inicio</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="./eventos.html">Todos
-                                            los
-                                            evento</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="./crearevento.html">Crear evento</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="./registro.html">
-                                            Registro</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="./acercade.html">
-                                            Acerca
-                                            de</a>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown"
-                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Ingresar
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                            <form>
-                                                <div class="mb-3">
-                                                    <label for="exampleInputEmail1" class="form-label">Email
-                                                        address</label>
-                                                    <input type="email" class="form-control" id="exampleInputEmail1"
-                                                        aria-describedby="emailHelp">
-                                                    <div id="emailHelp" class="form-text">We'll never share your
-                                                        email
-                                                        with
-                                                        anyone else.</div>
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="exampleInputPassword1"
-                                                        class="form-label">Password</label>
-                                                    <input type="password" class="form-control"
-                                                        id="exampleInputPassword1">
-                                                </div>
-                                                <div class="mb-3 form-check">
-                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                                    <label class="form-check-label" for="exampleCheck1">Check me
-                                                        out</label>
-                                                </div>
-                                                <button type="submit" class="btn btn-primary">Submit</button>
-                                            </form>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <form class="d-flex">
-                                    <input class="form-control me-2" type="search" placeholder="Buscar"
-                                        aria-label="Search">
-                                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                                </form>
-                            </div>
+    <header class="row1">
+        <div class="col">
+            <nav class="navbar navbar-light bg-dark fixed-top" style="color: rgb(241, 249, 240);">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./../../index.html"><img
+                            src="./../img/depositphotos_309387086-stock-illustration-green-and-purple-line-blank.jpg"
+                            alt="Logo" width="60px" height="60px"></a>
+                    <h1 id="title1">PASSAPARTY</h1>
+                    <nav id="loginpag" class="navbar navbar-expand-lg navbar-dark bg-dark ml-auto">
+                        <div class="container-fluid">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp"
+                                            class="rounded-circle" height="22" alt="Portrait of a Woman"
+                                            loading="lazy" />
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">Correo
+                                                    Electronico</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                                    aria-describedby="emailHelp">
+                                                <div id="emailHelp" class="form-text"></div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputPassword1"
+                                                    class="form-label">Contraseña</label>
+                                                <input type="password" class="form-control"
+                                                    id="exampleInputPassword1">
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Ingresar</button>
+                                        </form>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div id="desplegable" class="offcanvas-body bg-dark">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="./../../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./eventos.html">Todos
+                                        los
+                                        evento</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./crearevento.html" target="_blank">Crear evento</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./registro.html">
+                                        Registro</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./acercade.html">
+                                        Acerca
+                                        de</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Ingresar
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">Correo
+                                                    Electronico</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                                    aria-describedby="emailHelp">
+                                                <div id="emailHelp" class="form-text"></div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputPassword1"
+                                                    class="form-label">Contraseña</label>
+                                                <input type="password" class="form-control"
+                                                    id="exampleInputPassword1">
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Ingresar</button>
+                                        </form>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                            </form>
                         </div>
                     </div>
-                </nav>
-            </div>
-        </header>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="row-contact">
 
-        <div class="row-contact">
 
+        <div id="crearevento" class="col">
             <h2>Crear evento</h2>
             <p>A continuacion, siga los pasos y complete el siguiente formulario para solicitar la publicacion del
                 evento.</p>
-            <div class="col">
-                <form>
+            <form>
 
-                    <div class="form-group">
-                        <label for="username"></label>
-                        <input type="text" class="form-control" id="username" aria-describedby="Username"
-                            placeholder="Nombre del evento">
+                <div class="form-group">
+                    <label for="username"></label>
+                    <input type="text" class="form-control" id="username" aria-describedby="Username"
+                        placeholder="Nombre del evento">
+                </div>
+
+                <div class="form-group">
+                    <label for="text"></label>
+                    <input type="text" class="form-control" id="password" placeholder="Precio del Ticket">
+                </div>
+
+                <div class="form-group">
+                    <label for="singleselect"></label>
+                    <select class="form-control" id="singleselect">
+                        <option disabled selected>Seleccione numero de tickets para la venta</option>
+                        <option>300-400</option>
+                        <option>400-800</option>
+                        <option>800-1500</option>
+                        <option>1500 o +</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="textarea"></label>
+                    <textarea class="form-control" id="textarea" placeholder="Descripcion del evento."
+                        rows="5"></textarea>
+                </div>
+                <p>Seleccione archivo JPG, para portada de evento</p>
+                <div class="form-group">
+                    <label for="fileupload"></label>
+                    <input type="file" class="form-control-file" id="fileupload" aria-describedby="fileupload">
+                    <small id="fileupload" class="form-text text-muted"></small>
+                </div>
+
+                <fieldset class="form-group">
+                    <legend>
+                        <p>Tipo de evento</p>
+                    </legend>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="radio" id="radio1" value="Option 1"
+                                checked>
+                            <p>Deporte</p>
+                        </label>
                     </div>
-
-                    <div class="form-group">
-                        <label for="text"></label>
-                        <input type="text" class="form-control" id="password" placeholder="Precio del Ticket">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="radio" id="radio2" value="Option 2">
+                            <p>Cine</p>
+                        </label>
                     </div>
-
-                    <div class="form-group">
-                        <label for="singleselect"></label>
-                        <select class="form-control" id="singleselect">
-                            <option disabled selected>Seleccione numero de tickets para la venta</option>
-                            <option>300-400</option>
-                            <option>400-800</option>
-                            <option>800-1500</option>
-                            <option>1500 o +</option>
-                        </select>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="radio" id="radio3" value="Option 3">
+                            <p>Conciertos</p>
+                        </label>
                     </div>
-
-                    <div class="form-group">
-                        <label for="textarea">Textarea Input</label>
-                        <textarea class="form-control" id="textarea" placeholder="Descripcion del evento."
-                            rows="5"></textarea>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="radio" id="radio3" value="Option 3">
+                            <p>Fiestas</p>
+                        </label>
                     </div>
-                    <p>Seleccione archivo JPG, para portada de evento</p>
-                    <div class="form-group">
-                        <label for="fileupload"></label>
-                        <input type="file" class="form-control-file" id="fileupload" aria-describedby="fileupload">
-                        <small id="fileupload" class="form-text text-muted"></small>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="radio" id="radio3" value="Option 3">
+                            <p>Otros</p>
+                        </label>
                     </div>
+                </fieldset>
 
-                    <fieldset class="form-group">
-                        <legend>
-                            <p>Tipo de evento</p>
-                        </legend>
-                        <div class="form-check">
-                            <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="radio" id="radio1" value="Option 1"
-                                    checked>
-                                <p>Deporte</p>
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="radio" id="radio2" value="Option 2">
-                                <p>Cine</p>
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="radio" id="radio3" value="Option 3">
-                                <p>Conciertos</p>
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="radio" id="radio3" value="Option 3">
-                                <p>Fiestas</p>
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="radio" id="radio3" value="Option 3">
-                                <p>Otros</p>
-                            </label>
-                        </div>
-                    </fieldset>
+                <button type="submit" class="btn btn-success">Enviar</button>
+            </form>
 
-                    <button type="submit" class="btn btn-success">Enviar</button>
-                </form>
+        </div>
+
+        <div id="hacerevento">
+            <h2>Como crear el evento</h2>
+            <div>
+                <p>Previo a crear tu evento, inicia sesion en nuestra pagina.</p>
+                <p>Para crear a continuacion un evento, ingrese todos los datos que se piden en el formulario.</p>
+                <p>Una vez realizado ese procedimiento, tiene que seleccionar de los archivos de su computadora o telefono mobil la foto de portada del evento la cual sera visible en la pagina Passaparty y mediante la cual habra interacciones para la compra de entradas.</p>
+                <p>Una vez realizado los pasos anteriores, seleccione enviar.</p>
+                <p>Luego de seleccionar enviar, dirigirse a su correo electronico donde se dara aviso de que su evento esta creado o esta en procedimiento de creacion.</p>
+                <p>Una vez creado, habilite la venta desde su cuenta en la pagina Passaparty.</p>
 
             </div>
         </div>
 
+    </div>
 
-        <footer class="text-center text-lg-start border border-black mt-xl-5 pt-4">
 
-            <div class="container p-4">
 
+    <footer id="footer" class="footer-1">
+        <div class="main-footer widgets-dark typo-light">
+            <div class="container">
                 <div class="row">
 
-                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                        <h5 class="text-uppercase mb-4">TODOS LOS EVENTOS</h5>
-
-                        <ul class="list-unstyled mb-4">
-                            <li>
-                                <a href="#!" class="text-black">Acerca de</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-black">Collections</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-black">Environmental philosophy</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-black">Artist collaborations</a>
-                            </li>
-                        </ul>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget subscribe no-box">
+                            <h5 class="widget-title">COMPANY NAME<span></span></h5>
+                            <p>About the company, little description will goes here.. </p>
+                        </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                        <h5 class="text-uppercase mb-4">Assistance</h5>
 
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#!" class="text-black">Contact us</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-black">Size Guide</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-black">Shipping Information</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-black">Returns & Exchanges</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-black">Payment</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="redes-sociales" class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                        <h5 class="text-uppercase mb-4">Redes sociales</h5>
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#!"> <img src="./../img/facebook.png" alt=""> </a>
-                                <a href="#!"> <img src="./../img/instagram.png" alt=""> </a>
-                                <a href="#!"> <img src="./../img/whatsapp.png" alt=""> </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                        <h5 class="text-uppercase mb-4">Suscribete para saber mas</h5>
 
-                        <div class="form-outline form-black mb-4">
-                            <input id="email-fot" type="email" id="form5Example2" class="form-control" />
-                            <label class="form-label" for="form5Example2">Email</label>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget no-box">
+                            <h5 class="widget-title">Quick Links<span></span></h5>
+                            <ul class="thumbnail-widget">
+                                <li>
+                                    <div class="thumb-content"><a href="#.">&nbsp;Get Started</a></div>
+                                </li>
+                                <li>
+                                    <div class="thumb-content"><a href="#.">&nbsp;Top Leaders</a></div>
+                                </li>
+                                <li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget no-box">
+                            <h5 class="widget-title">Follow up<span></span></h5>
+                            <a href="#"> <i class="fa fa-facebook"> </i> </a>
+                            <a href="#"> <i class="fa fa-twitter"> </i> </a>
+                            <a href="#"> <i class="fa fa-youtube"> </i> </a>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget no-box">
+                            <h5 class="widget-title">Contact Us<span></span></h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <div class="emailfield">
+                                <input type="text" name="email" value="Email">
+                                <input name="uri" type="hidden" value="arabiantheme">
+                                <input name="loc" type="hidden" value="en_US">
+                                <input class="submitbutton ripplelink" type="submit" value="Subscribe">
+                                </form>
+                            </div>
                         </div>
 
-                        <button id="subscribirse" type="submit"
-                            class="btn btn-outline-black btn-block">Subscribe</button>
                     </div>
                 </div>
             </div>
-            <div class="text-center p-3 border-top border-black">
-                © 2022 Copyright:
-                <a class="text-black" href="./../../index.html">Passaparty.com.uy</a>
-            </div>
-        </footer>
 
-        <section id="whatsapp">
-            <a href="">
-                <img src="./../img/whatsapp 2.png" alt="">
-            </a>
-        </section>
+            <div class="footer-copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <p>Copyright Design Sherif Hamdy © 2019. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    <section id="whatsapp">
+        <a href="">
+            <img src="./../img/whatsapp 2.png" alt="">
+        </a>
+    </section>
 
     </div>
 
