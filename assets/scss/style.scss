@@ -32,6 +32,8 @@ body {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     ;
     text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
 }
 
 
@@ -39,11 +41,11 @@ body {
 
 header {
 
-    #title1 {
-        h1 {
-            @include titulos;
-        }
+    h1 {
+        @include titulos;
+        
     }
+
 
     img {
         width: 50px;
@@ -63,7 +65,7 @@ header {
 }
 
 .row2 {
-    margin-top: 160px;
+    margin-top: 150px;
 
 
     #presentacion {
@@ -72,7 +74,7 @@ header {
 }
 
 .row3 {
-    margin-top: 80px;
+    margin-top: 30px;
     margin-bottom: 80px;
 
     .title-destacados {
@@ -98,6 +100,7 @@ header {
         margin: auto;
         margin-top: 40px;
         margin-bottom: 20px;
+        box-shadow: 8px 8px 0;   
 
         .card-body {
             h5 {
@@ -111,6 +114,12 @@ header {
 
         img {
             padding: 15px 15px 15px 15px;
+            height: 220px;
+            transition: 2s;
+        }
+
+        img:hover {
+            height: 240px;
         }
     }
 }
@@ -207,6 +216,7 @@ footer {
         margin: auto;
         margin-top: 40px;
         margin-bottom: 20px;
+        box-shadow: 8px 8px 0;   
 
         .card-body {
             h5 {
@@ -220,6 +230,12 @@ footer {
 
         img {
             padding: 15px 15px 15px 15px;
+            height: 220px;
+            transition: 2s;
+        }
+
+        img:hover {
+            height: 240px;
         }
     }
 }
@@ -227,6 +243,7 @@ footer {
 .paginas {
     display: flex;
     justify-content: center;
+
 }
 
 // PAGINA CREAR EVENTOS
@@ -765,10 +782,6 @@ input.submitbutton.ripplelink {
             margin-top: map-get($carddestokp-estilos, top);
             margin-bottom: map-get($carddestokp-estilos, bottom);
             width: map-get($carddestokp-estilos, largo);
-
-            img {
-                height: 239px;
-            }
         }
     }
 
@@ -966,10 +979,6 @@ input.submitbutton.ripplelink {
             margin-top: map-get($carddestokp-estilos, top);
             margin-bottom: map-get($carddestokp-estilos, bottom);
             width: map-get($carddestokp-estilos, largo);
-
-            img {
-                height: 239px;
-            }
         }
     }
 
@@ -1036,7 +1045,7 @@ input.submitbutton.ripplelink {
             margin: auto;
             margin-right: 180px;
         }
-        
+
         img {
             width: 340px;
         }
